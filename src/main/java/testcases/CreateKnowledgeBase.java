@@ -11,11 +11,11 @@ public class CreateKnowledgeBase extends BaseClass {
 		CreateKnowledgeBaseThroughTextFiles kb = new CreateKnowledgeBaseThroughTextFiles();
 		kb.clickKnowledgeBaseMenu()
 		.clickAddIcon()
-		.enterKnowledgeBaseName("Knowledge Base 1")
+		.enterKnowledgeBaseName()
 		.clickAddButton()
 		.selectAddTextOption()
-		.enterTextFileName("Text File 1")
-		.enterTextContent("Text content 1")
+		.enterTextFileName()
+		.enterTextContent()
 		.clickTextFileSaveButton()
 		.clickKnowledgeBaseSaveButton()
 		.verifyKnowledgeBaseSummary();
