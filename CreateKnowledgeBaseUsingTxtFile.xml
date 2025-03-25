@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test" verbose="5">
+		<parameter name="username" value="bavithra.duraisamy@nurturebox.ai"></parameter>
+		<parameter name="password" value="test@1234"></parameter>
+		<parameter name="url" value="https://logindev.nurturebox.ai/login"></parameter>
+		<classes>
+			<class name="testcases.CreateKnowledgeBase" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
