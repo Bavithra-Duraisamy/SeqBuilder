@@ -48,8 +48,8 @@ public class CreateKnowledgeBaseThroughTextFiles extends BaseClass {
 		return this;
 	}
 	
-	public CreateKnowledgeBaseThroughTextFiles clickTextFileSaveButton() {
-		driver.findElement(By.xpath(prop.getProperty("text_file_save_button"))).click();
+	public CreateKnowledgeBaseThroughTextFiles clickPopupSaveButton() {
+		driver.findElement(By.xpath(prop.getProperty("popup_save_button"))).click();
 		return this;
 	}
 	
