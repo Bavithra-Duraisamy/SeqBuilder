@@ -1,0 +1,9 @@
+# Ignore all dotfiles
+.*
+
+# But allow .gitignore itself
+!.gitignore
+
+# Ignore bin and test-output folders
+bin/
+test-output/
