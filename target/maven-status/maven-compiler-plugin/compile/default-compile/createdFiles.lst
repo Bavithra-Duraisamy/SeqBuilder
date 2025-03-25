@@ -1,0 +1,12 @@
+testcases\DeleteKnowledgeBase.class
+pages\CreateSequenceUsingAgentPage.class
+base\BaseClass.class
+pages\CreateKnowledgeBaseThroughTextFiles.class
+pages\LoginPage.class
+testcases\CreateSequenceUsingAgent.class
+pages\CreateSequenceFromScratchPage.class
+pages\KnowledgeBaseSummaryPage.class
+testcases\CreateKnowledgeBase.class
+testcases\CreateSequenceFromScratch.class
+pages\CandidatesPage.class
+pages\WelcomePage.class
