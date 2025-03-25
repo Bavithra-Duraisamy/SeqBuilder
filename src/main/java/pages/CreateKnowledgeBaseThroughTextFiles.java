@@ -2,9 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 
+import com.github.javafaker.Faker;
+
 import base.BaseClass;
 
 public class CreateKnowledgeBaseThroughTextFiles extends BaseClass {
+	Faker faker = new Faker();
 	
 	public CreateKnowledgeBaseThroughTextFiles clickKnowledgeBaseMenu() {
 		driver.findElement(By.xpath(prop.getProperty("knowledge_base_menu"))).click();
@@ -16,7 +19,9 @@ public class CreateKnowledgeBaseThroughTextFiles extends BaseClass {
 		return this;
 	}
 	
-	public CreateKnowledgeBaseThroughTextFiles enterKnowledgeBaseName(String kbName) {
+	public CreateKnowledgeBaseThroughTextFiles enterKnowledgeBaseName() {
+		String kbName = faker.name().username();
+		System.out.println("Faker name is: "+ kbName);
 		driver.findElement(By.xpath(prop.getProperty("knowledge_base_name_input"))).sendKeys(kbName);
 		return this;
 	}
@@ -31,12 +36,14 @@ public class CreateKnowledgeBaseThroughTextFiles extends BaseClass {
 		return this;
 	}
 	
-	public CreateKnowledgeBaseThroughTextFiles enterTextFileName(String txtFileName) {
+	public CreateKnowledgeBaseThroughTextFiles enterTextFileName() {
+		String txtFileName = faker.name().name();
 		driver.findElement(By.xpath(prop.getProperty("text_filename_input"))).sendKeys(txtFileName);
 		return this;
 	}
 	
-	public CreateKnowledgeBaseThroughTextFiles enterTextContent(String textContent) {
+	public CreateKnowledgeBaseThroughTextFiles enterTextContent() {
+		String textContent = faker.team().name();
 		driver.findElement(By.xpath(prop.getProperty("text_content"))).sendKeys(textContent);
 		return this;
 	}
